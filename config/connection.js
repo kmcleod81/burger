@@ -4,11 +4,12 @@
 require("dotenv").config();
 const mysql = require('mysql');
 
-let connection;
+let connection; // wouldn't work with const
 
 if (process.env.JAWSDB_URL) {
     connection = mysql.createConnection(process.env.JAWSDB_URL);
 } else {
+    // Pulls "hidden" file info from .env 
     connection = mysql.createConnection({
         host: process.env.DB_HOST,
         port: process.env.DB_PORT,
@@ -18,8 +19,6 @@ if (process.env.JAWSDB_URL) {
     });
 }
 
-
-
 // query's to the database happens inside this function below
 connection.connect((err) => {
     if (err) {
@@ -28,4 +27,5 @@ connection.connect((err) => {
     console.log("connected to the database");
 });
 
+// Export connection for the ORM to use.
 module.exports = connection;
