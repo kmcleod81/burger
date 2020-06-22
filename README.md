@@ -26,9 +26,9 @@ Project is created with:
 * Javascript
 * MySql
 * Node.js
-** express
-** express-handlebars
-** dotenv
+    * express
+    * express-handlebars
+    * dotenv
 
 ## Usage
 The user will enter in the burger they would like to eat in the input field. The burger will then be generated into the  burgers menu. A devour button will appear next to the burger in the burger menu, and once clicked the burger will move to the burgers devoured list.
