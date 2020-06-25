@@ -21,5 +21,5 @@ const burger = {
     }
 };
 
-// Export the database functions for the controller (catsController.js).
+// Export 
 module.exports = burger;
