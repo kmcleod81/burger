@@ -17,7 +17,7 @@ $(document).ready(function () {
         var newBurger = {
             name: $("#burgerName").val().trim()
         };
-
+        console.log(newBurger);
         $.ajax("/api/burgers", {
             type: "POST",
             data: newBurger
