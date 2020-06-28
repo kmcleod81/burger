@@ -22,9 +22,10 @@ To run locally: `npm install` in your terminal/bash, then `node server`
 Project is created with:
 * HTML5
 * CSS3
-* Materialize
+* Bootstrap
 * Javascript
 * MySql
+* Deployed in Heroku
 * Node.js
     * express
     * express-handlebars
